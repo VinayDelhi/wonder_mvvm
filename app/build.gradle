@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion VERSION_COMPILE_VERSION
+    buildToolsVersion VERSION_BUILD_TOOLS
+    defaultConfig {
+        applicationId "com.example.wonder.wonder_mvvm"
+        minSdkVersion VERSION_MIN_SDK
+        targetSdkVersion VERSION_TARGET_SDK
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //support
+    implementation "com.android.support:appcompat-v7:$VERSION_SUPPORT_LIBRARY"
+    implementation "com.android.support:design:$VERSION_SUPPORT_LIBRARY"
+    implementation "com.android.support:cardview-v7:$VERSION_SUPPORT_LIBRARY"
+    implementation "com.android.support:multidex:$VERSION_MULTIDEX"
+    implementation "com.android.support:cardview-v7:$VERSION_SUPPORT_LIBRARY"
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$VERSION_RETROFIT"
+    implementation "com.squareup.retrofit2:converter-gson:$VERSION_RETROFIT"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$VERSION_RETROFIT"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxjava:2.1.14"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //dagger for DI
+    implementation 'com.google.dagger:dagger-android-support:2.15'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+
+    ///butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //Temporary
+    //calligraphy
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+}

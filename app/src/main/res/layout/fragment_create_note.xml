@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pinkish_grey">
+
+            <TextView
+                android:id="@+id/fragment_create_note_tv_lable"
+                style="@style/Font.Regular"
+                android:textSize="16sp"
+                android:textColor="@color/charcoal_grey"
+                android:layout_marginTop="24dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Create note max 300 characters" />
+
+            <EditText
+                android:id="@+id/fragment_create_note_et_desc"
+                style="@style/Font.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/fragment_create_note_tv_lable"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/charcoal_grey"
+                android:layout_marginTop="6dp"
+                android:padding="15dp"
+                android:maxLength="300"
+                android:gravity="top"
+                android:hint="Add a note description here"
+                android:background="@drawable/bg_rectangle_silver_two" />
+
+    <LinearLayout
+        android:id="@+id/fragment_note_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/fragment_note_bottom_submit_btn"
+            style="@style/Font.SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/charcoal_grey"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <!-- Font -->
+    <style name="Font">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="Font.Regular" parent="Font">
+        <item name="android:fontFamily">@font/gibson</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Font.RegularItalic" parent="Font">
+        <item name="android:fontFamily">@font/gibson</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Font.Light" parent="Font">
+        <item name="android:fontFamily">@font/gibsonlight</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Font.LightItalic" parent="Font">
+        <item name="android:fontFamily">@font/gibsonlight</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Font.SemiBold" parent="Font">
+        <item name="android:fontFamily">@font/gibsonsemibold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Font.Bold" parent="Font">
+        <item name="android:fontFamily">@font/gibsonbold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Font -->
+
+    <style name="GibsonSemiBold" parent="Font">
+        <item name="android:fontFamily">@font/gibsonsemibold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="GibsonLight" parent="Font">
+        <item name="android:fontFamily">@font/gibsonlight</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>
